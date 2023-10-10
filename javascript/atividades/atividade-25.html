@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1>fuções de callback em javascript</h1>
+   
+   <button id="meu botão" onclick="mudarcor()">alterar para fundo vermelho</button>
+   <button id="meu botão" onclick="voltarcor()">alterar para fundo branco</button>
+   <button id="meu botão" onclick="mostrarmensagem()">mensagem no alert</button>
+   <button id="meu botão" onclick="mensagem()">mensagem na pagina</button>
+  
+    <script>
+  // função calllback que mostra uma mensagem na tela
+  function mostrarmensagem() {
+            alert('o botão foi clicado!');
+        }
+        
+        function mensagem(){
+        document.write("adoro javasript")
+        }
+            
+        function mudarcor(){
+            document.bgColor=('red');
+        }
+function voltarcor() {
+    document.bgColor=('#fff');
+}
+
+    </script>
+</body>
+</html>

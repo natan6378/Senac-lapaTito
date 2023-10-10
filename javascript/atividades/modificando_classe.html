@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.style1{
+background-color: yellow;
+color: black;
+font-size: 20px;
+padding-left: 5px;
+}
+
+.style2{
+ width: 600px;
+ height: 300px;
+background-color: #ff0000;
+text-align: center;
+color: #fff;
+font-size: 25px;
+padding: 10px;
+}
+
+
+
+    </style>
+
+<script>
+function modificarClasse(){
+ 
+    document.getElementById('texto').className = 'style2';
+}
+function modificar(){
+ 
+ document.getElementById('texto').className = 'style1';
+}
+</script>
+
+   
+<div id="texto" class="estilo1">
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim est deserunt natus ipsa accusantium ex quam voluptatibus molestiae quasi commodi! Nesciunt maxime exercitationem ea odio expedita reiciendis culpa illo! Maxime.</h2>
+</div>
+        <hr>
+
+        <button type="button" onclick="modificarClasse()">vermelho</button>
+        <button type="button" onclick="modificar()">amarelo</button>
+        
+</body>
+</html>
